@@ -21,3 +21,7 @@ Task 3. VPN
 
 bastion_IP = 35.198.155.218
 someinternalhost_IP = 10.156.0.3
+
+#Homework #4
+testapp_IP = 35.198.155.218
+testapp_port = 9292
