@@ -1,14 +1,21 @@
 {
-    "builders": [
+
+    "variables": {
+        "project-id": "null",
+        "img-family": "null",
+        "machine-type": "null"
+    },
+
+     "builders": [
         {
             "type": "googlecompute",
-            "project_id": "infra-272014",
+            "project_id": "{{user `project-id`}}",
             "image_name": "reddit-base-{{timestamp}}",
-            "image_family": "reddit-base",
+            "image_family": "{{user `img-family`}}",
             "source_image_family": "ubuntu-1604-lts",
             "zone": "europe-west1-b",
             "ssh_username": "appuser",
-            "machine_type": "f1-micro"
+            "machine_type": "{{user `machine-type`}}"
         }
     ],
     "provisioners": [
