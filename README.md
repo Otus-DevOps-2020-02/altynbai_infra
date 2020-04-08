@@ -1,5 +1,5 @@
 #Homework #5
-testapp_IP = 35.246.161.243
+testapp_IP = 35.246.201.63
 testapp_port = 9292
 
 What have been done:
